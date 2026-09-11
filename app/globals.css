@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+/* ============================================================
+   SWAED PETROLEUM — DESIGN TOKENS
+   Palette derived directly from brand logo (navy / gold / ink)
+   ============================================================ */
+
+:root {
+  --background: #f6f4ef;
+  --background-dark: #0a0f1a;
+  --surface: #ffffff;
+  --surface-dark: #101a2c;
+
+  --navy-950: #060b14;
+  --navy-900: #0a1526;
+  --navy-800: #0e1f3a;
+  --navy-700: #14315e;
+  --navy-600: #1c4278;
+  --navy-500: #2a548f;
+
+  --gold-600: #a87f2c;
+  --gold-500: #c99a3d;
+  --gold-400: #d9af52;
+  --gold-300: #e8c878;
+  --gold-200: #f1ddab;
+
+  --ink-900: #0b0e14;
+  --text-primary: #10151f;
+  --text-secondary: #565c6c;
+  --text-tertiary: #8a90a0;
+  --text-on-dark: #f4f2ec;
+  --text-on-dark-secondary: #a9b0c2;
+
+  --border: #dfdcd3;
+  --border-dark: #1f2a3d;
+
+  --container-max: 1440px;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-dark: var(--background-dark);
+  --color-surface: var(--surface);
+  --color-surface-dark: var(--surface-dark);
+
+  --color-navy-950: var(--navy-950);
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-navy-600: var(--navy-600);
+  --color-navy-500: var(--navy-500);
+
+  --color-gold-600: var(--gold-600);
+  --color-gold-500: var(--gold-500);
+  --color-gold-400: var(--gold-400);
+  --color-gold-300: var(--gold-300);
+  --color-gold-200: var(--gold-200);
+
+  --color-ink-900: var(--ink-900);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-on-dark: var(--text-on-dark);
+  --color-text-on-dark-secondary: var(--text-on-dark-secondary);
+
+  --color-border: var(--border);
+  --color-border-dark: var(--border-dark);
+
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-fraunces);
+
+  --animate-marquee: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--gold-500);
+  color: var(--navy-950);
+}
+
+.container-swaed {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.eyebrow {
+  font-size: 0.8125rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.hairline {
+  height: 1px;
+  background: var(--border);
+}
+
+.hairline-dark {
+  height: 1px;
+  background: var(--border-dark);
+}
+
+/* Numeral rendering for oversized stats */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Underline-draw link */
+.link-draw {
+  position: relative;
+  display: inline-block;
+}
+.link-draw::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.link-draw:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Custom scrollbar for horizontal strips */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
