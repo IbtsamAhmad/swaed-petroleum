@@ -2,11 +2,14 @@
 
 /* ============================================================
    SWAED PETROLEUM — DESIGN TOKENS
-   Palette derived directly from brand logo (navy / gold / ink)
+   Palette derived directly from brand logo (navy / gold / ink).
+   Layout language follows descon.com: white header, clean
+   sans-serif headings, blue footer.
    ============================================================ */
 
 :root {
-  --background: #f6f4ef;
+  --background: #ffffff;
+  --muted: #f3f5f9;
   --background-dark: #0a0f1a;
   --surface: #ffffff;
   --surface-dark: #101a2c;
@@ -31,7 +34,7 @@
   --text-on-dark: #f4f2ec;
   --text-on-dark-secondary: #a9b0c2;
 
-  --border: #dfdcd3;
+  --border: #e2e6ee;
   --border-dark: #1f2a3d;
 
   --container-max: 1440px;
@@ -40,6 +43,7 @@
 
 @theme inline {
   --color-background: var(--background);
+  --color-muted: var(--muted);
   --color-background-dark: var(--background-dark);
   --color-surface: var(--surface);
   --color-surface-dark: var(--surface-dark);
@@ -68,7 +72,7 @@
   --color-border-dark: var(--border-dark);
 
   --font-sans: var(--font-manrope);
-  --font-display: var(--font-fraunces);
+  --font-display: var(--font-manrope);
 
   --animate-marquee: marquee 32s linear infinite;
 }
@@ -124,10 +128,23 @@ body {
 }
 
 .eyebrow {
-  font-size: 0.8125rem;
-  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+/* Descon-style section title with short accent rule underneath */
+.title-rule::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  margin-top: 1rem;
+  background: var(--gold-500);
+}
+.title-rule-center::after {
+  margin-inline: auto;
 }
 
 .text-balance {

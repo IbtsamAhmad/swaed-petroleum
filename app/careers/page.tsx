@@ -29,19 +29,19 @@ export default function CareersPage() {
   return (
     <>
       <PageHero
-        eyebrow="Careers"
-        title="Build Your Future With Us"
+        title="Careers"
+        eyebrow="Build Your Future With Us"
         subhead="SWAED grows by investing in the people who carry out our work — from graduate engineers to field supervisors and welders."
         image="/images/people/team-group-plant.jpg"
         imageAlt="SWAED field team gathered together at a plant site"
       />
 
       {/* CULTURE */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="bg-white py-20 md:py-28">
         <Container>
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8">
             <div className="lg:col-span-5">
-              <SectionHeading eyebrow="Our Culture" title="Helping hands, working as one." size="lg" />
+              <SectionHeading eyebrow="Our Culture" title="Helping hands, working as one." />
             </div>
             <Reveal delay={0.1} className="lg:col-span-6 lg:col-start-7">
               <p className="leading-relaxed text-text-secondary">
@@ -77,7 +77,7 @@ export default function CareersPage() {
             <p className="eyebrow text-gold-300">Why Join SWAED</p>
           </Reveal>
           <Reveal delay={0.08}>
-            <h2 className="mt-5 max-w-2xl text-balance font-display text-[clamp(2rem,4.4vw,3.5rem)] leading-[1.05]">
+            <h2 className="mt-5 max-w-2xl text-balance text-[clamp(1.75rem,3.6vw,2.8rem)] font-extrabold leading-[1.1]">
               {localContent.heading}
             </h2>
           </Reveal>
@@ -88,29 +88,29 @@ export default function CareersPage() {
       </section>
 
       {/* GROWTH / DEVELOPMENT */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="bg-white py-20 md:py-28">
         <Container>
-          <SectionHeading eyebrow="Growth & Development" title="Trained on real projects, mentored by industry experts." size="lg" />
+          <SectionHeading eyebrow="Growth & Development" title="Trained on real projects, mentored by industry experts." />
           <RevealStagger className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-3">
             <RevealItem className="border-t border-border pt-6">
-              <span className="text-xs tabular text-gold-600">01</span>
-              <h3 className="mt-3 font-display text-xl text-navy-950">Hands-On Mentorship</h3>
+              <span className="text-xs font-extrabold tabular text-gold-600">01</span>
+              <h3 className="mt-3 text-lg font-extrabold text-navy-950">Hands-On Mentorship</h3>
               <p className="mt-3 text-sm leading-relaxed text-text-secondary">
                 Intensive technical training paired with hands-on mentorship, equipping local
                 talent with the expertise to lead, manage and sustain operations.
               </p>
             </RevealItem>
             <RevealItem className="border-t border-border pt-6">
-              <span className="text-xs tabular text-gold-600">02</span>
-              <h3 className="mt-3 font-display text-xl text-navy-950">Supervised by Experts</h3>
+              <span className="text-xs font-extrabold tabular text-gold-600">02</span>
+              <h3 className="mt-3 text-lg font-extrabold text-navy-950">Supervised by Experts</h3>
               <p className="mt-3 text-sm leading-relaxed text-text-secondary">
                 Field teams are trained to high trade and safety standards, supervised by experts
                 drawn from major operating companies across the region.
               </p>
             </RevealItem>
             <RevealItem className="border-t border-border pt-6">
-              <span className="text-xs tabular text-gold-600">03</span>
-              <h3 className="mt-3 font-display text-xl text-navy-950">A Growing Group</h3>
+              <span className="text-xs font-extrabold tabular text-gold-600">03</span>
+              <h3 className="mt-3 text-lg font-extrabold text-navy-950">A Growing Group</h3>
               <p className="mt-3 text-sm leading-relaxed text-text-secondary">
                 From the SWAED Manufacturing Division to SWA Tech Co., our R&amp;D-driven growth is
                 opening new disciplines beyond traditional field construction.
@@ -121,15 +121,15 @@ export default function CareersPage() {
       </section>
 
       {/* DISCIPLINES / ROLES */}
-      <section className="border-t border-border bg-background py-24 md:py-32">
+      <section className="bg-muted py-20 md:py-28">
         <Container>
-          <SectionHeading eyebrow="Where You Could Work" title="Disciplines across our project teams." size="lg" />
+          <SectionHeading eyebrow="Where You Could Work" title="Disciplines across our project teams." />
           <div className="mt-14 grid grid-cols-1 gap-14 lg:grid-cols-2">
             <div>
               <p className="eyebrow text-gold-600">Engineering & Management</p>
               <ul className="mt-6 flex flex-wrap gap-3">
                 {disciplines.map((d) => (
-                  <li key={d} className="border border-border px-4 py-2 text-sm text-navy-900">
+                  <li key={d} className="border border-border bg-white px-4 py-2 text-sm font-semibold text-navy-900">
                     {d}
                   </li>
                 ))}
@@ -139,7 +139,7 @@ export default function CareersPage() {
               <p className="eyebrow text-gold-600">Field & Trades</p>
               <ul className="mt-6 flex flex-wrap gap-3">
                 {fieldRoles.map((d) => (
-                  <li key={d} className="border border-border px-4 py-2 text-sm text-navy-900">
+                  <li key={d} className="border border-border bg-white px-4 py-2 text-sm font-semibold text-navy-900">
                     {d}
                   </li>
                 ))}
@@ -165,15 +165,14 @@ export default function CareersPage() {
             <p className="eyebrow text-gold-300">Join Us</p>
           </Reveal>
           <Reveal delay={0.08}>
-            <h2 className="mt-5 max-w-2xl text-balance font-display text-[clamp(2rem,4.4vw,3.5rem)] leading-[1.05]">
+            <h2 className="mt-5 max-w-2xl text-balance text-[clamp(1.75rem,3.6vw,2.8rem)] font-extrabold leading-[1.1]">
               Ready to build with helping hands?
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-6 max-w-lg leading-relaxed text-white/65">
               Send your CV and area of interest to our team — we&rsquo;ll route it to the right
-              department across our offices in Istanbul, Khartoum, Juba, Baghdad, Ajman and
-              Algiers.
+              department across our offices in Istanbul, Khartoum, Juba, Thi Qar and Ajman.
             </p>
           </Reveal>
           <Reveal delay={0.24}>

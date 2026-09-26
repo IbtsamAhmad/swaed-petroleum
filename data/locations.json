@@ -1,0 +1,12 @@
+[
+  { "key": "istanbul", "lat": 41.03, "lng": 28.68 },
+  { "key": "khartoum", "lat": 15.64, "lng": 32.53 },
+  { "key": "juba", "lat": 4.85, "lng": 31.58 },
+  { "key": "thi-qar", "lat": 31.05, "lng": 46.26 },
+  { "key": "ajman", "lat": 25.41, "lng": 55.51 },
+  { "key": "algeria", "lat": 36.75, "lng": 3.06 },
+  { "key": "syria", "lat": 33.51, "lng": 36.29 },
+  { "key": "saudi-arabia", "lat": 24.71, "lng": 46.68 },
+  { "key": "unity-field", "lat": 9.45, "lng": 29.75 },
+  { "key": "paloch-field", "lat": 10.46, "lng": 32.53 }
+]
