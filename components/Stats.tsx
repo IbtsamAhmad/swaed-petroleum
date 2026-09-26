@@ -19,11 +19,7 @@ function Counter({ value, suffix = "" }: { value: number; suffix?: string }) {
   const [display, setDisplay] = useState(reduce ? value : 0);
 
   useEffect(() => {
-    if (!inView) return;
-    if (reduce) {
-      setDisplay(value);
-      return;
-    }
+    if (!inView || reduce) return;
     const duration = 1400;
     const start = performance.now();
     let raf: number;
@@ -39,7 +35,7 @@ function Counter({ value, suffix = "" }: { value: number; suffix?: string }) {
 
   return (
     <span ref={ref} className="tabular">
-      {display}
+      {reduce ? value : display}
       {suffix}
     </span>
   );
@@ -50,11 +46,11 @@ export default function Stats({ items }: { items: Stat[] }) {
     <div className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
       {items.map((item, i) => (
         <Reveal key={item.label} delay={i * 0.08}>
-          <div className="relative border-t border-border pt-6">
-            <div className="flex items-baseline gap-1 font-display text-[clamp(3rem,6vw,4.5rem)] leading-none text-navy-950">
+          <div className="relative border-l-2 border-gold-500 pl-5">
+            <div className="flex items-baseline gap-1 text-[clamp(2.75rem,5vw,4rem)] font-extrabold leading-none tracking-[-0.02em] text-navy-900">
               <Counter value={item.value} suffix={item.suffix} />
               {item.unit && (
-                <span className="ml-2 text-[clamp(1rem,1.6vw,1.35rem)] font-sans font-semibold uppercase tracking-wide text-gold-600">
+                <span className="ml-2 text-[clamp(1rem,1.6vw,1.35rem)] font-bold uppercase tracking-wide text-gold-600">
                   {item.unit}
                 </span>
               )}

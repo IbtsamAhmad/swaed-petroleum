@@ -48,7 +48,7 @@ export default function ContactForm() {
     return (
       <div className="border border-border bg-white p-10 text-center">
         <p className="eyebrow text-gold-600">Message received</p>
-        <h3 className="mt-4 font-display text-2xl text-navy-950">Thank you for reaching out.</h3>
+        <h3 className="mt-4 text-2xl font-extrabold text-navy-950">Thank you for reaching out.</h3>
         <p className="mt-3 text-sm text-text-secondary">
           A member of the SWAED team will be in touch shortly.
         </p>

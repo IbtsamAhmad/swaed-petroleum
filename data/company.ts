@@ -1,164 +1,118 @@
-// All facts sourced directly from the SWAED Petroleum corporate brochure.
-// Nothing in this file is invented — where the brochure is silent, the field is omitted.
+// Facts sourced from the SWAED Corporate Profile 2026 (PDF) and the
+// SWAED Experience List. Where the sources are silent, the field is omitted.
 
 export const company = {
   name: "SWAED Petroleum",
-  legalName: "SWAED Petroleum ve Teknik Servis San. ve Tic. Ltd. Şti.",
+  legalName: "SWAED Petroleum Technical Service Industrial & Trading Co. Ltd",
   tagline: "More Than a Company",
   positioning: "Driven by value",
   sector: "EPCC Contractor — Oil & Gas Infrastructure",
   websites: ["www.swaedpetroleum.com", "www.swaedholding.com"],
-  hq: {
-    city: "Istanbul",
-    country: "Turkey",
-  },
+  hq: { city: "Istanbul", country: "Turkey" },
+};
+
+export const generalContact = {
+  email: "mohamed@swaedpetroleum.com",
+  corporateEmail: "info@swaedpetroleum.com",
+  holdingEmail: "info@swaedholding.com",
+  phones: ["+90 536 290 5885", "+90 555 98 57775"],
+  websites: ["www.swaedpetroleum.com", "www.swaedholding.com"],
 };
 
 export const heroContent = {
   eyebrow: "EPCC Contractor · Oil & Gas Infrastructure",
-  headline: "Engineering the Pipelines That Carry Nations Forward.",
+  headline: "More Than a Company.",
   subhead:
-    "SWAED Petroleum is a specialist engineering, procurement, construction and commissioning contractor delivering onshore and offshore hydrocarbon infrastructure across Africa, Asia and Europe.",
-  primaryCta: { label: "Explore Our Expertise", href: "/verticals" },
-  secondaryCta: { label: "Discover Our Story", href: "/who-we-are" },
+    "Specialist engineering, procurement, construction and commissioning contractor delivering onshore and offshore hydrocarbon infrastructure across Africa, Asia and Europe.",
 };
 
-export const trustStatement = {
-  text: "Derived from the Arabic word “سواعد” — the plural of hand — SWAED represents helping hands working together, teamwork, and collective strength, united to achieve more.",
-  attribution: "SWAED Petroleum — Our Name, Our Promise",
+// Brochure p.5 — Company Overview & Expertise
+export const overview = {
+  lead: "Specialist engineering, procurement, construction and commissioning contractor with current projects not only in the African region but also Asia & Europe, as an international offshore and onshore partner for the oil and gas sector.",
+  body: "SWAED's expertise as an EPCC service provider in the energy industry focuses on onshore and offshore hydrocarbon infrastructure. The services offered, using a combination of global knowledge and expertise, cover all project phases — from project development and feasibility studies, through engineering design and procurement, to construction, commissioning and operational management.",
+  phases: [
+    { title: "Engineering & Design Services", text: "Feasibility studies, concept and detailed design for every project we deliver." },
+    { title: "Procurement & Supply", text: "Engineering-led sourcing of materials and equipment to exact project specifications." },
+    {
+      title: "Construction & Commissioning",
+      text: "Civil, electromechanical, instrumentation, welding, fabrication, IP, hot tapping, CP, sandblasting, painting & cleaning of tanks, pipeline construction and live pipeline repair.",
+    },
+  ],
+  closing: "SWAED combines local expertise with global standards, emphasizing sustainability, innovation, and client satisfaction in the energy sector.",
 };
 
-export const stats = [
-  {
-    value: 300,
-    suffix: "+",
-    unit: "KM",
-    label: "Cross-country pipeline under live repair",
-    detail: "32\" underground pipeline, South Sudan – Sudan, 2022–2026",
-  },
-  {
-    value: 170,
-    suffix: "+",
-    unit: "",
-    label: "Projects delivered with our core pipeline partner",
-    detail: "20+ years of combined technical partner experience",
-  },
-  {
-    value: 6,
-    suffix: "",
-    unit: "",
-    label: "Countries of active operation",
-    detail: "Turkey, Sudan, South Sudan, UAE, Iraq, Algeria",
-  },
-  {
-    value: 8,
-    suffix: "",
-    unit: "",
-    label: "Group companies under SWAED Holding",
-    detail: "Trading, energy, technology, manufacturing and more",
-  },
-];
-
-export const swaedAcronym = [
-  {
-    letter: "S",
-    word: "Safety First",
-    focus: "A zero-harm policy across all project phases.",
-    detail:
-      "Nothing is more important than the well-being of our people, partners, and communities.",
-  },
-  {
-    letter: "W",
-    word: "Workflow Integration",
-    focus: "Seamless coordination of Engineering, Procurement & Construction.",
-    detail:
-      "We eliminate silos to ensure smooth, efficient, and transparent project delivery.",
-  },
-  {
-    letter: "A",
-    word: "Asset Lifecycle Excellence",
-    focus: "Reliable, long-life infrastructure delivery.",
-    detail:
-      "Petroleum infrastructure designed for durability, maintainability, and peak performance from day one through decades of operation.",
-  },
-  {
-    letter: "E",
-    word: "Execution Reliability",
-    focus: "On-time, on-budget, to-spec project completion.",
-    detail:
-      "Clients trust us because we do what we say — precisely, professionally, and predictably.",
-  },
-  {
-    letter: "D",
-    word: "Design-Driven Procurement",
-    focus: "Engineering-led material and equipment sourcing.",
-    detail:
-      "Every material and component meets exact project specifications — eliminating guesswork, reducing rework, and guaranteeing quality.",
-  },
-];
-
-export const competitiveEdge = [
-  {
-    title: "Proven Track Record",
-    text: "A history of successfully delivering complex projects, building a reputation for reliability and excellence.",
-  },
-  {
-    title: "Commitment to HSE",
-    text: "Safety is our core value. We implement world-class HSE management systems to protect our people, assets, and the environment.",
-  },
-  {
-    title: "Technical Expertise",
-    text: "Our team consists of highly skilled professionals with deep industry knowledge and hands-on experience.",
-  },
-  {
-    title: "Integrated Approach",
-    text: "As part of the diversified SWAED group, we offer stability and can leverage cross-sector expertise for comprehensive project delivery.",
-  },
-  {
-    title: "Local Presence, Global Standards",
-    text: "We combine invaluable regional insight with adherence to international quality and safety benchmarks.",
-  },
-];
-
+// Brochure p.7 — History (2026 edition)
 export const history = {
-  intro:
-    "Since started as a small company in Sudan, SWAED's yard activities and scope expanded to cover more activities and sectors within the oil & gas industry.",
-  body: "SWAED had already moved to a new, larger business and started to grow with subsidiaries in different sectors. At the same time, we established our offices in Turkey — Istanbul — as our main office to serve not only the African region but also Asia & Europe, covering our activities in Sudan, South Sudan, Algeria, Iraq, UAE, Syria and soon in KSA.",
-  outro:
-    "SWAED continues to date to venture and reap its reward by participating in medium to large-scale projects. Domestic projects with international clientele have opened new areas of development. Focus in marketing strategy was redirected towards project-specific specialization. Today SWAED is a holding group of companies working across different sectors to achieve the SWAED 2034 vision.",
+  paragraphs: [
+    "Founded in Sudan in 2020 as a trading firm, SWAED quickly expanded into manufacturing as SWAED factory before scaling its operations alongside the Oil & Gas industry in 2022. That same year, we established our headquarters in Istanbul, Turkey, under SWAED Petroleum Technical Service Industrial and Trading Co., broadening our footprint across Africa, Asia, and Europe with active operations in Syria, South Sudan, Algeria, and Iraq.",
+    "Today, SWAED operates as a diversified holding group with presence across the UAE, Syria, and an upcoming expansion into Saudi Arabia. We consistently deliver medium- to large-scale domestic and international projects through specialized, project-focused marketing strategies — positioning the group to achieve its SWAED Vision 2034.",
+  ],
 };
 
 export const milestones = [
   {
-    year: "Origins",
-    title: "A small yard in Sudan",
-    text: "SWAED began as a small company in Sudan, its yard activities gradually expanding to cover more of the oil & gas sector.",
+    year: "2020",
+    title: "Founded in Sudan as a trading firm",
+    text: "SWAED begins as a trading company in Sudan.",
   },
   {
-    year: "Expansion",
-    title: "Istanbul established as headquarters",
-    text: "As the business grew with subsidiaries across different sectors, SWAED established its main office in Istanbul, Turkey, to serve the African, Asian and European regions.",
-  },
-  {
-    year: "2019",
-    title: "Bapco 32\" export pipeline hot tapping — Sudan",
-    text: "Delivered a landmark hot tapping project on a 32-inch export pipeline in partnership with our world-class technical partner.",
+    year: "Growth",
+    title: "SWAED factory",
+    text: "The business quickly expands into manufacturing as SWAED factory.",
   },
   {
     year: "2022",
-    title: "South Sudan operations begin",
-    text: "SWAED commenced running projects across three oil & gas fields in South Sudan with GPOC and DPOC, including the 300+ km cross-country life pipeline repair.",
+    title: "Oil & Gas operations and Istanbul headquarters",
+    text: "SWAED scales its operations alongside the oil & gas industry and establishes its headquarters in Istanbul, Turkey, under SWAED Petroleum Technical Service Industrial and Trading Co.",
   },
   {
-    year: "2023–2026",
-    title: "Multi-year EPCC & O&M contracts",
-    text: "Active work orders with GPOC and DPOC spanning construction, maintenance, engineering and field surface facilities across South Sudan.",
+    year: "2022",
+    title: "Three South Sudan oil fields",
+    text: "SWAED starts running projects for SPOC, GPOC and DPOC — including live repair of a 32-inch export crude pipeline.",
+  },
+  {
+    year: "Today",
+    title: "A diversified holding group",
+    text: "Active operations in Syria, South Sudan, Algeria and Iraq, with presence in the UAE and an upcoming expansion into Saudi Arabia.",
   },
   {
     year: "2034",
-    title: "The SWAED 2034 vision",
-    text: "SWAED continues to grow as a holding group across trading, energy, technology and manufacturing, working toward its 2034 vision.",
+    title: "SWAED Vision 2034",
+    text: "Medium- to large-scale domestic and international projects, delivered through specialized, project-focused strategies.",
   },
+];
+
+export const stats = [
+  { value: 300, suffix: "+", unit: "KM", label: "Cross-country live pipeline repair", detail: "Underground 32\" crude pipeline, South Sudan – Sudan" },
+  { value: 3, suffix: "", unit: "", label: "Oil fields served in South Sudan", detail: "SPOC, GPOC and DPOC — since 2022" },
+  { value: 11, suffix: "", unit: "", label: "Core service lines", detail: "From pipeline construction to R&D and training" },
+  { value: 8, suffix: "", unit: "", label: "Group companies", detail: "Trading, energy, technology and manufacturing" },
+];
+
+// Brochure p.15 — Director statement
+export const directorStatement = {
+  heading: "At SWAED, our name is our promise.",
+  paragraphs: [
+    "Derived from the Arabic word “سواعد” (SWAED), meaning the plural of hand, SWAED represents helping hands working together, teamwork, and collective strength — united to achieve more. This is not merely a name; it is our philosophy. We believe that great achievements are built not by individuals alone, but by many hands joined in purpose, trust, and excellence.",
+    "At SWAED, we bring together the strength of many hands and the precision of one mission: to build critical energy infrastructure with integrity, innovation, and unwavering commitment to excellence. Together we deliver, together we build the future.",
+  ],
+  signature: "CEO & Owner",
+};
+
+export const swaedAcronym = [
+  { letter: "S", word: "Safety First", focus: "Zero-harm policy across all project phases.", detail: "A zero-harm policy across our EPC projects. Nothing is more important than the well-being of our people, partners, and communities." },
+  { letter: "W", word: "Workflow Integration", focus: "Seamless coordination of Engineering, Procurement & Construction.", detail: "Seamless coordination between engineering, procurement, and construction phases. We eliminate silos to ensure smooth, efficient, and transparent project delivery." },
+  { letter: "A", word: "Asset Lifecycle Excellence", focus: "Reliable, long-life infrastructure delivery.", detail: "Delivering reliable, long-life petroleum infrastructure designed for durability, maintainability, and peak performance from day one through decades of operation." },
+  { letter: "E", word: "Execution Reliability", focus: "On-time, on-budget, to-spec project completion.", detail: "On-time, on-budget, and to-spec delivery of petroleum projects. Our clients trust us because we do what we say — precisely, professionally, and predictably." },
+  { letter: "D", word: "Design-Driven Procurement", focus: "Engineering-led material and equipment sourcing.", detail: "Engineering-led procurement ensures every material and component meets exact project specifications — eliminating guesswork, reducing rework, and guaranteeing quality." },
+];
+
+export const competitiveEdge = [
+  { title: "Proven Track Record", text: "A history of successfully delivering complex projects, building a reputation for reliability and excellence." },
+  { title: "Commitment to HSE", text: "Safety is our core value. We implement world-class HSE management systems to protect our people, assets, and the environment." },
+  { title: "Technical Expertise", text: "Our team consists of highly skilled professionals with deep industry knowledge and hands-on experience." },
+  { title: "Integrated Approach", text: "As part of the diversified SWAED group, we offer stability and can leverage cross-sector expertise for comprehensive project delivery." },
+  { title: "Local Presence, Global Standards", text: "We combine invaluable regional insight with adherence to international quality and safety benchmarks." },
 ];
 
 export const qualityManagement = {
@@ -167,10 +121,10 @@ export const qualityManagement = {
   points: [
     "Establishing clear, measurable Quality Objectives in all areas of operation.",
     "Continually monitoring, reviewing and striving to improve the Quality System and processes.",
-    "Our customers are our lifeline — we establish partnerships at all levels with our clients so that we completely understand customer requirements.",
-    "Meeting all mandatory requirements, whether local, national or international regulations, and committing to the health and safety of the work force and stakeholders.",
+    "Establishing partnerships at all levels with our clients so that we completely understand customer requirements.",
+    "Meeting all mandatory requirements — local, national and international regulations — committed to the health and safety of the work force and stakeholders.",
     "Reducing our impact upon the environment through adjusting aspects of our performance.",
-    "Raising awareness among all employees, to ensure they understand the contribution they make towards the client, their safety and the impact upon the environment.",
+    "Raising awareness among all employees of the contribution they make towards the client, their safety and the environment.",
     "Defining responsibilities and lines of communication for each department or discipline.",
   ],
 };
@@ -182,36 +136,32 @@ export const qhse = {
 };
 
 export const certifications = [
-  {
-    name: "ISO 9001",
-    label: "Quality Management System",
-  },
-  {
-    name: "ISO 14001:2015",
-    label: "Environmental Management System",
-  },
+  { name: "ISO 9001:2015", label: "Quality Management System" },
+  { name: "ISO 14001:2015", label: "Environmental Management System" },
 ];
 
-export const trustBadges = [
-  { label: "Safety First" },
-  { label: "Quality Assured" },
-  { label: "Committed Teams" },
-  { label: "Global Expertise" },
-];
+export const trustBadges = ["Safety First", "Quality Assured", "Committed Teams", "Global Expertise"];
 
+// Brochure p.37
 export const sustainability = {
   heading: "Our Commitment to Sustainable Development & HSE Excellence",
-  body: "At SWAED Petroleum, we are guided by a core philosophy: we are more than a company. We are a forward-looking catalyst for positive change, driven by a bold vision to transform industry standards, empower communities, and build a resilient future. We are steadfastly committed to the principles of sustainable development — driving operational growth while meeting the needs of the present and safeguarding tomorrow. We integrate a rigorous, systematic approach to Health, Safety, and Environmental (HSE) management across every level of our operations. Every strategic decision we make balances economic performance with our deep-rooted social and environmental responsibilities, maintaining total accountability to our clients, partners, and stakeholders. Our uncompromising HSE stance is anchored by a strict “No Harm” culture — ensuring complete protection for our people, assets, and operational environments.",
+  paragraphs: [
+    "At SWAED Petroleum, we are guided by a core philosophy: we are more than a company. We are a forward-looking catalyst for positive change, driven by a bold vision to transform industry standards, empower communities, and build a resilient future.",
+    "We are steadfastly committed to the principles of sustainable development — driving operational growth while meeting the needs of the present and safeguarding tomorrow. We integrate a rigorous, systematic approach to Health, Safety, and Environmental (HSE) management across every level of our operations. Every strategic decision we make balances economic performance with our deep-rooted social and environmental responsibilities, maintaining total accountability to our clients, partners, and stakeholders.",
+    "As we advance toward our long-term aspirations, sustainability and innovation remain the pillars of our success. Our uncompromising HSE stance is anchored by a strict “No Harm” culture — ensuring complete protection for our people, assets, and operational environments. By prioritizing occupational health, proactive risk management, and sustainable practices, SWAED delivers high-performance solutions while fulfilling our mission to create a lasting, meaningful impact.",
+  ],
 };
 
+// Brochure p.38
 export const localContent = {
   heading: "Empowerment Through Local Content",
   body: "True to our philosophy of being more than a company, SWAED looks far beyond commercial transactions and geographic borders. We are deeply committed to driving long-term value in every region where we operate by actively investing in local capacity building. Central to this strategy is our specialized Graduate Development Program, where we recruit and nurture high-potential local graduates. Through intensive technical training and hands-on mentorship, we equip local talent with the expertise required to lead, manage, and sustain operations — fostering national self-reliance and empowering the communities we serve.",
 };
 
+// Brochure p.39
 export const rnd = {
   heading: "Research & Development (R&D) & Innovation",
-  body: "Reflecting our foundational philosophy that SWAED is more than a company, our R&D division operates under SWAED's direct ownership, serving as the strategic engine for company-wide innovation. Through continuous investment in research, technology, and engineering, the department has achieved exponential growth within a single year, giving rise to two key operational pillars.",
+  body: "Reflecting our foundational philosophy that SWAED is more than a company, our R&D division operates under the direct leadership of SWAED's ownership, serving as the strategic engine for company-wide innovation. Through continuous investment in research, technology, and engineering, the department has achieved exponential growth within a single year, giving rise to two key operational pillars.",
   pillars: [
     {
       name: "SWAED Manufacturing Division",
@@ -222,6 +172,8 @@ export const rnd = {
       text: "A specialized technology arm focused on driving digital transformation across Artificial Intelligence (AI), Advanced IT Infrastructure, and Industrial Multimedia solutions.",
     },
   ],
+  science:
+    "We do not merely adopt industry standards — we create them. Our R&D team actively solves complex operational challenges for our clients through rigorous applied research. Our contributions to the scientific community are regularly peer-reviewed and published globally.",
   publication: {
     title:
       "Study of Selected Parameters Impact on the Occupational Doses in Industrial Radiography at Non-Destructive Testing in Oil and Gas",
@@ -230,26 +182,9 @@ export const rnd = {
 };
 
 export const orgChart = {
-  corporate: [
-    "Owner & CEO",
-    "Chief Operations Officer",
-    "Managing Director",
-    "Contract Manager – CPL",
-  ],
-  corporateDepartments: [
-    "Construction Management",
-    "Document Control",
-    "HR",
-    "Accounting",
-    "QHSE",
-    "Procurement",
-    "Engineering",
-  ],
-  project: [
-    "Project Director",
-    "Project Manager",
-    "Assigned Document Controller",
-  ],
+  corporate: ["Owner & CEO", "Chief Operations Officer", "Managing Director", "Contract Manager – CPL"],
+  corporateDepartments: ["Construction Management", "Document Control", "HR", "Accounting", "QHSE", "Procurement", "Engineering"],
+  project: ["Project Director", "Project Manager", "Assigned Document Controller"],
   projectBranches: [
     {
       lead: "Construction Manager",
@@ -275,6 +210,7 @@ export const orgChart = {
   ],
 };
 
+// Brochure p.40
 export const subsidiaries = [
   { name: "SWAED Global Trading", location: "Sudan" },
   { name: "SWAED Paint & Plastic Factory", location: "Sudan & Turkey" },
@@ -286,118 +222,8 @@ export const subsidiaries = [
   { name: "SWAED Petroleum", location: "Algeria" },
 ];
 
-export const countries = [
-  "Sudan",
-  "Turkey",
-  "South Sudan",
-  "UAE",
-  "Iraq",
-  "Algeria",
-];
-
-export const offices = [
-  {
-    label: "Main Office",
-    city: "Istanbul – Turkey",
-    address: "Guzelyurt Mah. Haramidere Cad. KAPI No. 19, 34510 Esenyurt / Istanbul",
-    phones: ["+90 555 98 57775", "+90 536 290 5885"],
-    email: "mohamed@swaedpetroleum.com",
-  },
-  {
-    label: "Sudan Branch",
-    city: "Khartoum – Sudan",
-    address: "Bahri – Kafori, Block 1 / 1357",
-    phones: ["+249 9124 57775"],
-  },
-  {
-    label: "South Sudan",
-    city: "South Sudan",
-    address: "Huba – Numra Tlatah, Lukak Building, Office 1/2",
-    phones: ["+211 1233 57775"],
-  },
-  {
-    label: "Iraq Branch",
-    city: "Thi Qar – Iraq",
-    address: "Alsafawa Blk 85-115/10",
-    phones: ["+90 555 98 57775"],
-  },
-  {
-    label: "United Arab Emirates Branch",
-    city: "Ajman – UAE",
-    address: "Ajman Free Zone, C1 Building, Makani",
-    phones: [],
-  },
-];
-
-export const generalContact = {
-  email: "mohamed@swaedpetroleum.com",
-  corporateEmail: "info@swaedpetroleum.com",
-  websites: ["www.swaedpetroleum.com", "www.swaedholding.com"],
-};
-
-export const capabilities = [
-  {
-    id: "01",
-    title: "Cross-Country Pipeline & Piping Construction",
-    description:
-      "EPC delivery of cross-country pipeline and piping systems for the hydrocarbon industry, covering onshore and offshore infrastructure end to end.",
-  },
-  {
-    id: "02",
-    title: "Life Pipeline & Piping Repair",
-    description:
-      "Live, online and rupture repair of critical pipelines and trunklines under operating conditions — eliminating emergency shutdowns and minimizing downtime.",
-  },
-  {
-    id: "03",
-    title: "Field Surface Facilities, Well Pads & EDS",
-    description:
-      "EPCC of wellpads, field service facilities, flowlines and trunklines, oil gathering manifolds (OGMs), and well pad modification.",
-  },
-  {
-    id: "04",
-    title: "Hot Tapping Services",
-    description:
-      "Advanced hot tapping for trunklines, pipelines and piping systems, delivered with a world-class technical partner bringing over three decades of field experience.",
-  },
-  {
-    id: "05",
-    title: "Intelligent Pigging Services",
-    description:
-      "Turnkey in-line inspection (ILI) using advanced robotics, sensors and AI-based data processing, for tools ranging from 6\" to 48\" in diameter.",
-  },
-  {
-    id: "06",
-    title: "Cathodic Protection (CP)",
-    description:
-      "Cathodic protection services safeguarding buried and submerged pipeline assets against corrosion over their operating life.",
-  },
-  {
-    id: "07",
-    title: "Inspection & NDT",
-    description:
-      "Conventional and advanced non-destructive testing — UT, MT, PT, RT, PAUT, LRUT — alongside Risk-Based Inspection (RBI) and asset integrity programs.",
-  },
-  {
-    id: "08",
-    title: "Operation & Maintenance (O&M)",
-    description:
-      "Full operational and maintenance support delivered by engineers and technicians with 15+ years of experience across South Sudan's oil fields.",
-  },
-  {
-    id: "09",
-    title: "Earth Moving & Civil Work",
-    description: "Earthworks and civil construction supporting pipeline, well pad and facility projects.",
-  },
-  {
-    id: "10",
-    title: "Storage Tank Cleaning, Sandblasting & Painting",
-    description: "Tank cleaning, surface preparation, sandblasting and protective painting for storage infrastructure.",
-  },
-  {
-    id: "11",
-    title: "Oil & Gas Research, Development & Training",
-    description:
-      "An R&D division driving applied research and training for the industry, including peer-reviewed contributions presented internationally.",
-  },
+export const clients = [
+  { short: "DPOC", name: "Dar Petroleum Operating Company" },
+  { short: "GPOC", name: "Greater Pioneer Operating Company" },
+  { short: "SPOC", name: "Sudd Petroleum Operating Company" },
 ];

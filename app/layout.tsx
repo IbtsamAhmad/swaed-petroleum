@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import TopBar from "@/components/TopBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -16,21 +17,6 @@ const manrope = localFont({
   ],
 });
 
-const fraunces = localFont({
-  variable: "--font-fraunces",
-  display: "swap",
-  src: [
-    { path: "./fonts/fraunces/fraunces-latin-300-normal.woff2", weight: "300", style: "normal" },
-    { path: "./fonts/fraunces/fraunces-latin-400-normal.woff2", weight: "400", style: "normal" },
-    { path: "./fonts/fraunces/fraunces-latin-500-normal.woff2", weight: "500", style: "normal" },
-    { path: "./fonts/fraunces/fraunces-latin-600-normal.woff2", weight: "600", style: "normal" },
-    { path: "./fonts/fraunces/fraunces-latin-300-italic.woff2", weight: "300", style: "italic" },
-    { path: "./fonts/fraunces/fraunces-latin-400-italic.woff2", weight: "400", style: "italic" },
-    { path: "./fonts/fraunces/fraunces-latin-500-italic.woff2", weight: "500", style: "italic" },
-    { path: "./fonts/fraunces/fraunces-latin-600-italic.woff2", weight: "600", style: "italic" },
-  ],
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.swaedpetroleum.com"),
   title: {
@@ -38,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s — SWAED Petroleum",
   },
   description:
-    "SWAED Petroleum is an EPCC contractor delivering pipeline construction and repair, field surface facilities, hot tapping, intelligent pigging, inspection & NDT, and operations & maintenance across Turkey, Sudan, South Sudan, Iraq, the UAE and Algeria.",
+    "SWAED Petroleum is an EPCC contractor delivering cross-country pipeline construction, live pipeline repair, field surface facilities, hot tapping, intelligent pigging, inspection & NDT, and operations & maintenance across Turkey, Sudan, South Sudan, Iraq, the UAE, Algeria and Syria.",
   keywords: [
     "SWAED Petroleum",
     "EPCC contractor",
@@ -62,8 +48,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${manrope.variable} ${fraunces.variable}`}>
+    <html lang="en" className={manrope.variable}>
       <body className="min-h-screen bg-background text-text-primary flex flex-col">
+        <TopBar />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
