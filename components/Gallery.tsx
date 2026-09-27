@@ -35,7 +35,7 @@ export default function Gallery({ photos, className }: { photos: Photo[]; classN
 
   return (
     <>
-      <div className={cn("grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4", className)}>
+      <div className={cn("grid grid-cols-2 gap-3 md:grid-cols-3", count !== 3 && "lg:grid-cols-4", className)}>
         {photos.map((p, i) => (
           <button
             key={p.src + i}

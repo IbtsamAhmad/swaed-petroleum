@@ -267,7 +267,6 @@ export const services: Service[] = [
       { src: `${P}/gpoc-eds-toma-south/05.jpg`, alt: "Narrow cable trench with bedding sand" },
       { src: `${P}/gpoc-eds-toma-south/06.jpg`, alt: "HV cable laid in a trench" },
       { src: `${P}/gpoc-eds-toma-south/08.jpg`, alt: "Excavator working along a trench line" },
-      { src: `${P}/dpoc-export-pipeline-repair/06.jpg`, alt: "SWAED team at an open pipeline excavation" },
     ],
     projects: ["gpoc-eds-toma-south", "dpoc-export-pipeline-repair"],
   },

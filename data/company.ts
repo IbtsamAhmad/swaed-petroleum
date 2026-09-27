@@ -44,7 +44,7 @@ export const overview = {
 // Brochure p.7 — History (2026 edition)
 export const history = {
   paragraphs: [
-    "Founded in Sudan in 2020 as a trading firm, SWAED quickly expanded into manufacturing as SWAED factory before scaling its operations alongside the Oil & Gas industry in 2022. That same year, we established our headquarters in Istanbul, Turkey, under SWAED Petroleum Technical Service Industrial and Trading Co., broadening our footprint across Africa, Asia, and Europe with active operations in Syria, South Sudan, Algeria, and Iraq.",
+    "Founded in Sudan in 2020 as a trading firm, SWAED quickly expanded into manufacturing as SWAED factory before scaling its operations alongside the Oil & Gas industry in 2022. That same year, we established our headquarters in Istanbul, Turkey, under SWAED Petroleum Industrial and Trading Co., broadening our footprint across Africa, Asia, and Europe with active operations in Syria, South Sudan, Algeria, and Iraq.",
     "Today, SWAED operates as a diversified holding group with presence across the UAE, Syria, and an upcoming expansion into Saudi Arabia. We consistently deliver medium- to large-scale domestic and international projects through specialized, project-focused marketing strategies — positioning the group to achieve its SWAED Vision 2034.",
   ],
 };
