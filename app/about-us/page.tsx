@@ -221,7 +221,7 @@ export default function AboutPage() {
                 <p className="mt-6 leading-relaxed text-text-secondary">{qhse.text}</p>
                 <p className="mt-4 leading-relaxed text-text-secondary">{qhse.text2}</p>
                 <div className="relative mt-8 aspect-[3/2] overflow-hidden">
-                  <Image src="/images/people/qhse-group-banner.jpg" alt="SWAED HSE commitment team at a field surface facility" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
+                  <Image src="/images/projects/spoc-crude-tank-cleaning/03.jpg" alt="SWAED crew in PPE assembled before the day's tank work" fill sizes="(min-width:1024px) 45vw, 100vw" className="object-cover" />
                 </div>
               </Reveal>
             </div>

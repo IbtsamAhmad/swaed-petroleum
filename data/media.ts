@@ -80,8 +80,8 @@ export const mediaItems: MediaItem[] = [
       "Health, Safety and Environment (HSE) is an integral part of SWAED's ethos and a core value embedded in everything we do.",
       "SWAED holds ISO 14001 certification and is among the companies in the Oil and Gas construction industry with the lowest LTI rates, due to its strong resolve and commitment to HSE. Bearing testament to this, SWAED has acquired numerous client awards for excellence in its HSE performance.",
     ],
-    image: "/images/people/qhse-group-banner.jpg",
-    imageAlt: "SWAED HSE commitment team at a field surface facility",
+    image: "/images/people/crew-night-shift.jpg",
+    imageAlt: "SWAED crew in coveralls and hard hats on a night shift",
     link: { label: "About us — QHSE", href: "/about-us#qhse" },
   },
 ];
